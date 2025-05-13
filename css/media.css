@@ -1,4 +1,3 @@
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -21,12 +20,20 @@
         font-size: 1.1rem;
     }
     
-    .services, .form-section {
+    .services, .portfolio, .github-section, .form-section {
         padding: 80px 5%;
     }
     
-    .card {
+    .card, .github-card {
         max-width: 100%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+        height: 200px;
     }
     
     .form-container {

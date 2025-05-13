@@ -11,53 +11,196 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Анимированный фон -->
     <div class="binary-background" id="binaryContainer"></div>
 
     <header>
-        <div><strong>Code.</strong></div>
+        <a href="#" class="logo">
+            <i class="fas fa-code"></i>
+            <span>Code.</span>
+        </a>
         <nav>
             <a href="#">Головна</a>
-            <a href="#">Портфоліо</a>
+            <a href="#portfolio">Портфоліо</a>
             <a href="#">Тарифи</a>
+            <a href="#contact">Контакти</a>
         </nav>
     </header>
 
     <section class="hero">
         <h1>Майбутнє вже настало.<br>Ти готовий?</h1>
         <p>Технології не працюють на добрих чи поганих. Вони лише дають нам інструменти, щоб провести свою справжню сутність.</p>
-        <button class="btn">Замовити консультацію</button>
+        <button class="btn">
+            <i class="fas fa-paper-plane"></i>
+            Замовити консультацію
+        </button>
     </section>
 
     <section class="services">
         <h2>Що ми пропонуємо</h2>
+        <p class="section-subtitle">Ми надаємо повний спектр послуг для розробки та підтримки вашого цифрового продукту</p>
         <div class="cards">
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-server"></i>
+                </div>
                 <h3>Базова розробка</h3>
                 <p>Розроблення повноцінної серверної частини, баз даних, API, адаптація, інтеграція та безпечні платіжні системи.</p>
             </div>
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
                 <h3>UX/UI Дизайн</h3>
                 <p>Сучасний дизайн інтерфейсів, що покращує взаємодію користувачів з вашим продуктом.</p>
             </div>
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
                 <h3>Технічна підтримка</h3>
                 <p>Постійний моніторинг та оперативне вирішення будь-яких технічних питань.</p>
             </div>
         </div>
     </section>
 
-    <section class="form-section">
-        <h2>Залишилися питання?</h2>
-        <p>Для отримання безкоштовної консультації, заповніть форму або зв'яжіться з нами в соціальних мережах.</p>
-        <textarea placeholder="Ваше питання..."></textarea>
-        <div class="colors">
-            <span class="red"></span>
-            <span class="green"></span>
-            <span class="blue"></span>
-            <span class="purple"></span>
+    <!-- Новая секция портфолио -->
+    <section class="portfolio" id="portfolio">
+        <h2>Наші роботи</h2>
+        <p class="section-subtitle">Останні проекти, які ми реалізували для наших клієнтів</p>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Проект 1">
+                <div class="portfolio-overlay">
+                    <h3>Інтернет-магазин</h3>
+                    <p>Повний цикл розробки електронної комерції з інтеграцією платіжних систем</p>
+                    <a href="#" class="portfolio-link">
+                        Детальніше
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Проект 2">
+                <div class="portfolio-overlay">
+                    <h3>Корпоративний сайт</h3>
+                    <p>Сучасний дизайн та розробка сайту для великої компанії</p>
+                    <a href="#" class="portfolio-link">
+                        Детальніше
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Проект 3">
+                <div class="portfolio-overlay">
+                    <h3>Мобільний додаток</h3>
+                    <p>Розробка крос-платформового додатку для iOS та Android</p>
+                    <a href="#" class="portfolio-link">
+                        Детальніше
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <button class="btn">Відправити інформацію</button>
     </section>
+
+    <!-- Секция с GitHub блоками -->
+    <section class="github-section">
+        <h2>Наші проекти на GitHub</h2>
+        <p class="section-subtitle">Перегляньте наші відкриті проекти та внесіть свій внесок у розвиток</p>
+        
+        <div class="github-cards">
+            <div class="github-card">
+                <div class="github-card-header">
+                    <i class="fab fa-github github-icon"></i>
+                    <h3>Web Development Toolkit</h3>
+                </div>
+                <p>Набір інструментів та шаблонів для швидкої розробки веб-додатків. Включає готові компоненти, стилі та скрипти для старту вашого проекту.</p>
+                <a href="#" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    Перейти до репозиторію
+                </a>
+                <div class="github-stats">
+                    <span class="github-stat">
+                        <i class="fas fa-star"></i> 245
+                    </span>
+                    <span class="github-stat">
+                        <i class="fas fa-code-branch"></i> 18
+                    </span>
+                </div>
+            </div>
+            
+            <div class="github-card">
+                <div class="github-card-header">
+                    <i class="fab fa-github github-icon"></i>
+                    <h3>UI Components Library</h3>
+                </div>
+                <p>Бібліотека готових UI компонентів для React та Vue. Сучасний дизайн, адаптивність та повна документація для кожного компонента.</p>
+                <a href="#" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    Перейти до репозиторію
+                </a>
+                <div class="github-stats">
+                    <span class="github-stat">
+                        <i class="fas fa-star"></i> 189
+                    </span>
+                    <span class="github-stat">
+                        <i class="fas fa-code-branch"></i> 32
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact">
+        <h2>Залишилися питання?</h2>
+        <p class="section-subtitle">Для отримання безкоштовної консультації, заповніть форму або зв'яжіться з нами в соціальних мережах.</p>
+        
+        <div class="form-container">
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" placeholder="Введіть ваше ім'я...">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Введіть ваш email...">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Ваше питання</label>
+                <textarea id="message" placeholder="Опишіть ваше питання або проект..."></textarea>
+            </div>
+            
+            <div class="colors">
+                <span class="red active"></span>
+                <span class="green"></span>
+                <span class="blue"></span>
+                <span class="purple"></span>
+                <span class="orange"></span>
+            </div>
+            
+            <button class="btn">
+                <i class="fas fa-paper-plane"></i>
+                Відправити інформацію
+            </button>
+        </div>
+        
+        <div class="social-links">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Code. Усі права захищені.
+    </footer>
 </body>
     <script src="js/main.js"></script>
 </html>

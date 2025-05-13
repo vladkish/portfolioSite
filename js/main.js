@@ -1,8 +1,8 @@
 class BinaryBackground {
     constructor() {
         this.container = document.getElementById('binaryContainer');
-        this.digits = ['0', '1', '0', '1', '0', '1', '#'];
-        this.count = 100;
+        this.digits = ['0', '1']; // Убрал символ # и оставил только 0 и 1
+        this.count = 50; // Уменьшил количество цифр с 100 до 50
         this.elements = [];
         
         this.init();
@@ -74,4 +74,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+        });
