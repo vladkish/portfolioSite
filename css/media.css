@@ -1,47 +1,226 @@
 @media (max-width: 768px) {
-    header {
+    body {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 48px;
+    }
+    
+    .content h1 {
+        font-size: 48px;
+    }
+    
+    .content p, .main p {
+        font-size: 20px;
+    }
+    
+    .primary {
+        padding: 15px 30px;
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+    
+    .offer {
+        margin-top: 150px;
+    }
+    
+    .text-offer {
+        font-size: 36px;
+    }
+    
+    .text-email h1 {
+        font-size: 36px;
+    }
+    
+    .text-email p {
+        font-size: 18px;
+    }
+    
+    .email {
+        margin-top: 200px;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px 5%;
     }
     
-    nav {
-        width: 100%;
-        justify-content: space-around;
-        gap: 15px;
-        flex-wrap: wrap;
+    .social * {
+        width: 60px;
+        height: 60px;
     }
-    
-    .hero {
-        padding: 100px 5% 80px;
-    }
-    
-    .hero p {
-        font-size: 1.1rem;
-    }
-    
-    .services, .portfolio, .github-section, .form-section {
-        padding: 80px 5%;
-    }
-    
-    .card, .github-card {
-        max-width: 100%;
-    }
+}
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 576px) {
+    .content h1 {
+        font-size: 36px;
     }
-
-    .portfolio-item {
-        height: 200px;
+    
+    .text-offer {
+        font-size: 28px;
     }
     
     .form-container {
-        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        flex-direction: column;
+        max-width: 200px;
     }
     
-    .colors span {
-        width: 35px;
-        height: 35px;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
     }
+    
+    .submit-btn {
+        padding: 10px 20px;
+    }
+    
+    .nav ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .email {
+        width: 90%;
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        background-color: green;
+    }
+    
+    .text-email {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .social {
+        justify-content: center;
+        margin: 30px auto 0;
+    }
+    
+    .form-container {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        background-color: green;
+    }
+    
+    .text-email h1 {
+        font-size: 48px;
+    }
+    
+    .text-email p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .form-container {
+        padding: 25px;
+    }
+    
+    .text-email h1 {
+        font-size: 36px;
+    }
+    
+    .text-email p {
+        font-size: 18px;
+    }
+    
+    .social * {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .form-container {
+        padding: 20px;
+        max-width: 200px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    textarea {
+        min-height: 120px;
+    }
+    
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .social {
+        max-width: 260px;
+        gap: 15px;
+    }
+    
+    .social * {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.form-container {
+    transition: all 0.3s ease;
+}
+
+.form-group input,
+.form-group textarea {
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1E1B4B;
+    box-shadow: 0 0 0 2px rgba(30, 27, 75, 0.2);
+    outline: none;
+}
+
+.submit-btn {
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
