@@ -3,6 +3,17 @@
     color: white;
 }
 
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* чтобы был позади контента */
+  background-color: linear-gradient(180deg, #111827 0%, #1E1B4B 100%); /* или любой цвет подложки */
+}
+
+
 main {
     display: flex;
     align-items: center;

@@ -23,6 +23,7 @@
             </ul>
         </nav>
     </header>
+    <div id="particles-js"></div>
     <main>
         <section class="main">
             <div class="content">
@@ -123,10 +124,14 @@
     </section>
     </main>
 
+    <script src="js/burger.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        document.getElementById('burger').addEventListener('click', function() {
-            document.getElementById('navList').classList.toggle('active');
-        });
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js loaded');
+    });
     </script>
+
 </body>
 </html>
